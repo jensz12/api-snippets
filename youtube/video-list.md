@@ -5,10 +5,9 @@ $latest_video_id = $videos['items'][0]['id']['videoId'];
 ?>
 ```
 
-```php
-<?php foreach ($videos['items'] as $video): ?>
-```
 ```html
+<?php foreach ($videos['items'] as $video): ?>
+
 <div class="col-sm-6">
 					<section class="thumbnail">
 						<a href="https://youtu.be/<?php echo $video['id']['videoId']; ?>">
@@ -19,7 +18,5 @@ $latest_video_id = $videos['items'][0]['id']['videoId'];
 						</div>
 					</section>
 				</div>
-```
-```php
 				<?php endforeach; ?>
 ```
