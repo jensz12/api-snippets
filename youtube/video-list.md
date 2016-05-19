@@ -1,3 +1,8 @@
+# Video List
+Henter en liste over de seneste videoer på en Youtube kanal.
+
+Kræver API key & channel id
+
 ```php 
 <?php
 $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?key=API-KEY&part=snippet&channelId=CHANNEL-ID&order=date&maxResults=10'), true);
