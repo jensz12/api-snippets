@@ -1,3 +1,9 @@
+# Get Subs
+Henter en liste over subscribere til en Twitch kanal
+
+Kræver API OAuth key med scope ```channel_subscriptions```
+
+```php
 <?php
 $twitch_subs = json_decode(file_get_contents('https://api.twitch.tv/kraken/channels/CHANNEL-NAME/subscriptions?oauth_token=API-TOKEN&limit=100&client_id=CLIENT-ID'), true);
 
@@ -21,7 +27,9 @@ foreach ($twitch_subs['subscriptions'] as $sub) {
 
 ksort($subs);
 ?>
-
+```
+```html
 	<?php foreach ($subs as $sub): ?>
 				<img src="<?php echo $sub['avatar']; ?>" height="60" width="60" class="player" data-toggle="tooltip" data-placement="top" title="<?php echo $sub['name']; ?>"/>
 				<?php endforeach; ?>
+```
