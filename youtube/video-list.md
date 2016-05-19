@@ -1,7 +1,7 @@
-<?php
+```php <?php
 $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?key=API-KEY&part=snippet&channelId=CHANNEL-ID&order=date&maxResults=10'), true);
 $latest_video_id = $videos['items'][0]['id']['videoId'];
-?>
+?>```
 
 <?php foreach ($videos['items'] as $video): ?>
 				<div class="col-sm-6">
