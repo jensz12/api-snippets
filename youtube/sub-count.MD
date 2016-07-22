@@ -9,3 +9,7 @@ $sub = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/chan
 $sub_count = $sub['items'][0]['statistics']['subscriberCount'];
 ?>
 ```
+
+```php
+<?php echo number_format("$sub_count;")  ?>
+```
