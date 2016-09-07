@@ -1,7 +1,7 @@
 # Playlist List
 Henter en liste over playlister på en kanal
 
-Kræver API key & channel id
+Kræver [API key](https://console.developers.google.com/apis/credentials) & channel id
 
 ```php
 <?php
