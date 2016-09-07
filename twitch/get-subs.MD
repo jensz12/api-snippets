@@ -1,7 +1,7 @@
 # Get Subs
 Henter en liste over subscribere til en Twitch kanal
 
-Kræver API OAuth key med scope ```channel_subscriptions``` & et client id
+Kræver API OAuth key med scope ```channel_subscriptions``` & et (client id)[https://www.twitch.tv/settings/connections]
 
 ```php
 <?php
