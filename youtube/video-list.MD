@@ -5,7 +5,7 @@ Kræver [API key](https://console.developers.google.com/apis/credentials) & chan
 
 ```php 
 <?php
-$videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?key=API-KEY&part=snippet&channelId=CHANNEL-ID&order=date&maxResults=NUMBER-OF-RESULTS'), true);
+$videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?key=API-KEY&part=snippet&channelId=CHANNEL-ID&order=date&maxResults=NUMBER-OF-RESULTS&type=video'), true);
 ?>
 ```
 
