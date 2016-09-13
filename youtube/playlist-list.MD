@@ -25,11 +25,3 @@ $playlist_id = $playlists['items'][0]['id']['playlistId'];
 				<?php endforeach; ?>
 			</div>
 ```
-
-```css
-.text-ellipsis {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-```
