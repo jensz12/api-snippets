@@ -1,7 +1,7 @@
 # Now Playing
 Viser hvad der i øjeblikket bliver scrobblet til en Last.FM konto
 
-Kræver et API Key & et [PHP libary](https://github.com/matto1990/PHP-Last.fm-API)
+Kræver et [API Key](http://www.last.fm/api/account/create) & et [PHP libary](https://github.com/matto1990/PHP-Last.fm-API)
 
 ```php
 <?php
