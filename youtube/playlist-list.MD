@@ -18,7 +18,7 @@ $playlist_id = $playlists['items'][0]['id'];
 							<img class="img-responsive" src="<?php echo $playlist['snippet']['thumbnails']['medium']['url']; ?>" width="100%" />
 						</a>
 						<div class="caption">
-							<a href="https://youtube.com/playlist?list=<?php echo $playlist['id']['playlistId']; ?>"><h4 class="text-ellipsis"><?php echo $playlist['snippet']['title'];?></h4></a>
+							<a href="https://youtube.com/playlist?list=<?php echo $playlist['id']; ?>"><h4 class="text-ellipsis"><?php echo $playlist['snippet']['title'];?></h4></a>
 						</div>
 					</section>
 				</div>
