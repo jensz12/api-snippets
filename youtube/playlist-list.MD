@@ -6,7 +6,7 @@ Kræver [API key](https://console.developers.google.com/apis/credentials) & chan
 ```php
 <?php
 $playlists = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/playlists?key=API-KEY&part=snippet&channelId=CHANNEL-ID&order=date&maxResults=50'), true);
-$playlist_id = $playlists['items'][0]['id']['playlistId'];
+$playlist_id = $playlists['items'][0]['id'];
 ?>
 ```
 ```html
