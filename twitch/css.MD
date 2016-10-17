@@ -1,3 +1,4 @@
+CSS for showing nice user pictures
 ```css
 .player {
     margin-top: 1px;
