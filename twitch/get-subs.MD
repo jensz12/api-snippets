@@ -5,7 +5,7 @@ Kræver [API OAuth key](https://bot.jensz12.com/twitchapi) med scope ```channel_
 
 ```php
 <?php
-$twitch_subs = json_decode(file_get_contents('https://api.twitch.tv/kraken/channels/CHANNEL-NAME/subscriptions?oauth_token=API-TOKEN&limit=100&client_id=CLIENT-ID'), true);
+$twitch_subs = json_decode(file_get_contents('https://api.twitch.tv/kraken/channels/CHANNEL-ID/subscriptions?oauth_token=API-TOKEN&limit=100&client_id=CLIENT-ID&api_version=5'), true);
 
 $total_subs = $twitch_subs['_total'] -1;
 $subs = array();
