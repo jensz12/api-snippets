@@ -21,9 +21,9 @@ if ($artists = $packageClass->getRecentTracks(array('user' => 'USERNAME GOES HER
 			echo '<img src="'.$artist['images']['medium'].'" alt="" />';
 	}
 }
-else
+else {
 	echo 'Hmm der opstod en API fejl, tjek <a href="http://www.last.fm/api/errorcodes">Last.FM API</a> for flere detaljer om problemet. Fejlkode '.$packageClass->error['code'].' - </b><i>'.$packageClass->error['desc'].'</i>';
-
+}
 //print_r($artists);
 ?>
 ```
